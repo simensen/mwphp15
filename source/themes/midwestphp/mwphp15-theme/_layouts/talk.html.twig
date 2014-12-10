@@ -36,11 +36,12 @@
                 {% endif %}
                 <!-- .talk--image -->
             </header>
-
             <div class="talk-content entry-content">
                 {% block content_wrapper %}
                     {% block content %}{% endblock %}
                 {% endblock %}
+                <p>Level: {{ page.level }}</p>
+                <p>Tags: {{ page.tags }}</p>
             </div>
         </article>
     </main>

@@ -7,7 +7,12 @@
 {% else %}
     <ul class="talks-list">
         {% for talk in data.talks %}
-            <li><a href="{{ talk.url }}" title="{{ talk.title }}">{{ talk.title }}</a></li>
+            <li><a href="{{ talk.url }}" title="{{ talk.title }}">{{ talk.title }}</a>
+                <ul class="talk-sub-information">
+                    <li>Level: {{ talk.level }}</li>
+                    <li>Tags: Some, Random, Tags</li>
+                </ul>
+            </li>
         {% endfor %}
     </ul>
 {% endif %}

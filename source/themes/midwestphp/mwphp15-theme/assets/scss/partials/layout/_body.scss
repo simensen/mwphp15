@@ -288,6 +288,19 @@
         letter-spacing: 0.038em;
       }
     }
+
+    ul {
+      &.talk-sub-information {
+        padding: 0 0 0 1em;
+
+        li {
+          font-size: .75em;
+          line-height: 1em;
+          border: none;
+          padding: 0;
+        }
+      }
+    }
   }
 }
 
